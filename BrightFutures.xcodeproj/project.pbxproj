@@ -562,9 +562,13 @@
 					};
 					E9DF0814194470060083F7F2 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					E9DF081F194470060083F7F2 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 						TestTargetID = E9DF0814194470060083F7F2;
 					};
 				};
@@ -1125,6 +1129,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1140,6 +1145,7 @@
 				PRODUCT_NAME = BrightFutures;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -1149,6 +1155,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1163,6 +1170,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = BrightFutures;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -1170,6 +1178,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1183,6 +1192,8 @@
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 9S52L7R65X/;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -1199,6 +1210,8 @@
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 9S52L7R65X/;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -1212,6 +1225,7 @@
 				E98647AF1BF327E400B6BEEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E98647B31BF327E400B6BEEE /* Build configuration list for PBXNativeTarget "BrightFutures-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1220,6 +1234,7 @@
 				E98647B11BF327E400B6BEEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9CBFD171B8268FB00702394 /* Build configuration list for PBXNativeTarget "BrightFutures-watchOS" */ = {
 			isa = XCConfigurationList;
